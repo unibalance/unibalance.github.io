@@ -310,3 +310,23 @@ Pricing tables & lists
     text-shadow: none;
     background: #d81b60;
 }
+.lead a {
+    color: #fff;
+    text-decoration: underline;
+}
+.enquiry-form {
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.enquiry-form h3, .enquiry-form p {
+    color: #fff;
+}
+.enquiry-form label {
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .enquiry-form form {
+        width: 650px;
+    }   
+}
