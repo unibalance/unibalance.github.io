@@ -325,8 +325,18 @@ Pricing tables & lists
 .enquiry-form label {
     color: #fff;
 }
+.form-status-alert {
+    color: #fff;
+    padding-top: 20px;
+}
 @media (min-width: 768px) {
     .enquiry-form form {
         width: 650px;
     }   
+    .form-status-alert {
+        padding: 0 0 0 20px;
+    }
+    .form-submit-div * {
+        display: inline;
+    }
 }

@@ -249,13 +249,17 @@
 					  </div>
 					  <div class="form-group">
 					    <label for="user-tel">Phone Number</label>
-					    <input type="tel" class="form-control" id="user-tel" placeholder="Phone Number" required>
+					    <input type="tel" class="form-control" id="user-tel" pattern="[789][0-9]{9}" placeholder="Phone Number" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="user-message">Message</label>
 					    <textarea class="form-control" id="user-message" rows="4" placeholder="Message" required></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-primary">Submit</button>
+					  <div class="form-submit-div">
+						  <button type="submit" class="btn btn-primary">Submit</button>
+						  <p class="form-status-alert"></p>	
+					  </div>
+
 					</form>
 				</div>
 
@@ -300,6 +304,7 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
         <script src="js/scripts.js"></script>
         <!-- StatCounter -->
         <script type="text/javascript">
