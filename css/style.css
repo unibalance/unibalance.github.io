@@ -314,6 +314,8 @@ Pricing tables & lists
     color: #fff;
     text-decoration: underline;
 }
+
+/*Contact Form*/
 .enquiry-form {
     padding-top: 60px;
     justify-content: center;
@@ -329,6 +331,66 @@ Pricing tables & lists
     color: #fff;
     padding-top: 20px;
 }
+
+/*In the news*/
+
+#in-the-news {
+    background: #fff;
+}
+
+#in-the-news h3 {
+    color: #d81b60;
+    margin: 10px 0 25px 0;
+}
+
+.news-container {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    flex-flow: column nowrap;
+}
+
+.news-item {
+    display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 25px 0;
+}
+
+.news-item img {
+    width: 100%;
+}
+
+.news-item h4 {
+    margin-top: 25px;
+}
+
+.news-item p {
+    height: 200px;
+}
+
+.news-item a button {
+    width: 60%;
+    cursor: pointer;
+}
+
+/*Custom Media Queries*/
+
+@media (min-width: 480px) {
+    .news-container {
+        flex-flow: row wrap;
+    }
+    .news-item {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
 @media (min-width: 768px) {
     .enquiry-form form {
         width: 650px;
@@ -338,5 +400,23 @@ Pricing tables & lists
     }
     .form-submit-div * {
         display: inline;
+    }
+    .news-item {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .news-item {
+        width: calc(33.3333333% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .news-item {
+        width: calc(25% - 20px);
+        margin: 10px;
     }
 }
