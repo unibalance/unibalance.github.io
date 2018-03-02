@@ -79,6 +79,7 @@ $(function () {
 
         // Show Success/Failure Alert
         $(".form-status-alert").text("Your message has been sent");
+        $('.enquiry-form form')[0].reset();
 
         setTimeout(function() {
             $(".form-status-alert").text("");            
@@ -87,5 +88,27 @@ $(function () {
     }
 
     $(".enquiry-form form").on("submit", submitEnquiry);
+
+    var productCarousel = document.querySelector('.product-carousel');
+    var currentImage = productCarousel.querySelector('img');
+    console.log(currentImage);
+    var images = ['14m/profile', '14m/side-handle', '16s/profile', '16s/side-handle'];
+    index = 0;
+    console.log(images[index]);
+    function changeImage () {
+        if( index === 3 ) {
+            index = 0;
+        }
+        else {
+            index++;
+        }
+        currentImage.setAttribute("src", "../img/"+images[index]+".png");
+    }
+
+    setInterval(changeImage, 3000);
+
+    $(".navbar-toggler").on("click", function() {
+        $(".navbar").toggleClass("change-background");
+    });
 
 });
