@@ -436,6 +436,11 @@ Pricing tables & lists
     cursor: pointer;
 }
 
+.link-to-specsheet {
+    color: #f31500;
+    text-decoration: none;
+}
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #ffffff !important;
     background-color: #f31500 !important;
@@ -460,6 +465,33 @@ Pricing tables & lists
 .change-background {
     background: linear-gradient(#c2185b, #dd2e4c) !important;
 }
+
+#gallery {
+    background-color: #fff;
+}
+
+#gallery img {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    transition: all .3s ease-in;
+    z-index: 1;
+}
+
+#gallery img:hover {
+    box-shadow: 0 3px 7px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 3px 7px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 3px 7px rgba(34, 25, 25, 0.4);
+}
+
+#gallery .col-xs-12 {
+    margin: 5px 0;
+}
+
+
 
 /*Custom Media Queries*/
 

@@ -10,7 +10,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!--icons-->
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/lightbox.min.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <!-- Google Analytics Code -->
+
+				<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114987607-1"></script>
+				<script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+
+				  gtag('config', 'UA-114987607-1');
+				</script>
+				
+        <!-- Google Analytics Code End -->
     </head>
     <body>
         <!--header-->
@@ -25,16 +39,16 @@
                         <a class="nav-link page-scroll" href="#main">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#product">Product</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#contact">Buy</a>
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link page-scroll" href="#gallery">Gallery</a>
                     </li>
                     <!-- <li class="nav-item mr-3">
-                        <a class="nav-link page-scroll" href="#gallery">Gallery</a>
+                        <a class="nav-link page-scroll" href="#contact">Buy</a>
                     </li> -->
                     <!-- <li class="nav-item mr-3">
                         <a class="nav-link page-scroll" href="#blog">Blog</a>
@@ -67,6 +81,66 @@
                             <a href="#product" class="btn btn-14m mr-2 mb-2 page-scroll">BUY NOW</a>
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product">
+            <h2 class="text-primary text-center">PRODUCT</h2>
+            <div class="product-container container">
+                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="ks14m-tab" data-toggle="tab" href="#ks14m" role="tab" aria-controls="ks14m" aria-selected="true">KS 14M</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ks16s-tab" data-toggle="tab" href="#ks16s" role="tab" aria-controls="ks16s" aria-selected="false">KS 16S</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active product-details" id="ks14m" role="tabpanel" aria-labelledby="ks14m-tab">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5">
+                                <img src="img/14m/profile.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-7">
+                                <ul>
+                                    <li>KS 14M Optional color: white, black</li>
+                                    <li>Integrated trolley bar</li>
+                                    <li>174Wh imported battery and 800w high speed motor</li>
+                                    <li>Front &amp; rear LED hi-lite illumination</li>
+                                    <li>Magnesium Pedal pillar, more sturdy and durable</li>
+                                    <li>Bluetooth for app route guidance</li>
+                                    <li>For more information, <a target="_blank" class="link-to-specsheet" href="docs/KS-14M-Specification-KS-14M-Table.pdf">View the detailed specifications</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-attributes">
+                            <h5><span>Pre-Order Price: </span>INR 29,999/- + SHIPPING</h5>
+                            <a class="btn btn-primary page-scroll" href="#contact">BUY NOW</a>
+                        </div>
+                        </div>    
+                      <div class="tab-pane fade product-details" id="ks16s" role="tabpanel" aria-labelledby="ks16s-tab">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-5">
+                                <img src="img/16s/profile-rubber-black.png" alt="">
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-7">
+                                <ul>
+                                    <li>KINGSONG 16S Color: Rubber Black</li>
+                                    <li>Integrated trolley bar</li>
+                                    <li>806Wh imported battery and 1200W high speed motor</li>
+                                    <li>Front &amp; rear LED hi-lite illumination</li>
+                                    <li>Magnesium Pedal pillar, more sturdy and durable</li>
+                                    <li>Bluetooth for app route guidance</li>
+                                    <li>For more information, <a target="_blank" class="link-to-specsheet" href="docs/KS-16S-specification-KS-16S.pdf">View the detailed specifications</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-attributes">
+                            <h5><span>Pre-Order Price: </span>INR 99,999/- + SHIPPING</h5>
+                            <a class="btn btn-primary page-scroll" href="#contact">BUY NOW</a>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -128,11 +202,9 @@
                                     <em class="ion-ios-cloud-upload-outline icon-md"></em>
                                 </div>
                                 <h6>Tested for Safety and Performance</h6>
-                                <p>
-                                    Each KINGSONG electric unicycle leaving the factory is tested against
-                                    impeccable performance and safety standards. Rest
-                                    assured it will never let you down.
-                                </p>
+                                <p>KINGSONG electric unicycles comes with the best materials used for pedals,
+					                        footboard grip, and protective foam padding which make
+					                        riding a joy even on long tedious rides.</p>
                             </div>
                         </div>
                     </div>
@@ -173,109 +245,72 @@
             </div>
         </section>
 
-        <section class="bg-alt p-0">
-            <div class="container">
-                <div class="row d-md-flex mt-5">
-                    <div class="col-sm-6 pl-5 pr-5 pt-5 pb-4 wow fadeInLeft">
-                        <h3><a href="#">Safety and Riding Pleasure</a></h3>
-                        <p>KINGSONG electric unicycles comes with the best materials used for pedals,
-                        footboard grip, and protective foam padding which make
-                        riding a joy even on long tedious rides.</p>
-                    </div>
-                    <div class="col-sm-6 p-0 wow fadeInRight">
-                        <img class="img-fluid" src="img/14m/closeup-pedal.png" alt="KS 14M White">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-alt p-0">
-            <div class="container">
-                <div class="row d-md-flex mt-5">
-                    <div class="col-sm-6 p-0 wow fadeInLeft">
-                        <img class="img-fluid" src="img/14m/closeup-body.png" alt="KS 14M White">
-                    </div>
-                    <div class="col-sm-6 pl-5 pr-5 pt-5 pb-4 wow fadeInRight">
-                        <h3><a href="#">Why use an electric unicycle?</a></h3>
-                        <p class="lead pt-4">Life is easier and a lot more fun
-                            with the electric unicycle.
-                            The electric unicycle gives you ultimate
-                            commuting freedom that no other vehicle is capable
-                            of delivering in the present times. Consider these:</p>
-                        <ul class="pt-4 pb-3 list-default">
-                            <li>Charge on the home power points and be ready to go in 2-6 hours.</li>
-                            <li>Enjoy riding upto 70 kms on single charge.</li>
-                            <li>Carry it around like a brief-case and park under your desk.</li>
-                            <li>Too tired to ride? Pick it up and get on the bus, train or cab.</li>
-                            <li>No more trips to the petrol pump!</li>
-                            <li>Listen to your favorite music while on the go.</li>
-                            <li>Not enough? Meet the most effective ice-breaker in town -- engage in fun conversations efforlessly.</li>
-                        </ul>
-                        <div class="text-center">
-	                        <a href="#contact" class="btn btn-primary page-scroll">Get in touch for more info</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="product">
-            <h2 class="text-primary text-center">PRODUCT</h2>
-            <div class="product-container container">
-                <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="ks14m-tab" data-toggle="tab" href="#ks14m" role="tab" aria-controls="ks14m" aria-selected="true">KS 14M</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="ks16s-tab" data-toggle="tab" href="#ks16s" role="tab" aria-controls="ks16s" aria-selected="false">KS 16S</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                      <div class="tab-pane fade show active product-details" id="ks14m" role="tabpanel" aria-labelledby="ks14m-tab">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-5">
-                                <img src="img/14m/profile.png" alt="">
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-7">
-                                <ul>
-                                    <li>KS 14M Optional color: white, black</li>
-                                    <li>Integrated trolley bar</li>
-                                    <li>174Wh imported battery and 800w high speed motor</li>
-                                    <li>Colorful RGB lights</li>
-                                    <li>Front &amp; rear LED hi-lite illumination</li>
-                                    <li>Magnesium Pedal pillar, more sturdy and durable</li>
-                                    <li>Bluetooth for app route guidance</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-attributes">
-                            <h5><span>Pre-Order Price: </span>INR 29,999/- + SHIPPING</h5>
-                            <a class="btn btn-primary page-scroll" href="#contact">BUY NOW</a>
-                        </div>
-                        </div>    
-                      <div class="tab-pane fade product-details" id="ks16s" role="tabpanel" aria-labelledby="ks16s-tab">
-                          <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-5">
-                                <img src="img/16s/profile-rubber-black.png" alt="">
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-7">
-                                <ul>
-                                    <li>KINGSONG 16S Color: Rubber Black</li>
-                                    <li>Integrated trolley bar</li>
-                                    <li>806Wh imported battery and 1200W high speed motor</li>
-                                    <li>Colorful RGB lights</li>
-                                    <li>Front &amp; rear LED hi-lite illumination</li>
-                                    <li>Magnesium Pedal pillar, more sturdy and durable</li>
-                                    <li>Bluetooth for app route guidance</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product-attributes">
-                            <h5><span>Pre-Order Price: </span>INR 99,999/- + SHIPPING</h5>
-                            <a class="btn btn-primary page-scroll" href="#contact">BUY NOW</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
+        <section id="gallery">
+        	<div class="container">
+        		<h2 class="text-primary text-center">Gallery</h2>
+        		<div class="row">
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/white/gallery1.jpg" data-lightbox="image-set" data-title="KINGSONG 14M White">
+				    			<img src="img/14m/white/gallery1.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/white/gallery2.jpg" data-lightbox="image-set" data-title="KINGSONG 14M White">
+				    			<img src="img/14m/white/gallery2.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/white/gallery3.jpg" data-lightbox="image-set" data-title="KINGSONG 14M White">
+				    			<img src="img/14m/white/gallery3.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/white/gallery4.jpg" data-lightbox="image-set" data-title="KINGSONG 14M White">
+				    			<img src="img/14m/white/gallery4.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/black/gallery9.jpg" data-lightbox="image-set" data-title="KINGSONG 14M Black">
+				    			<img src="img/14m/black/gallery9.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/black/gallery10.jpg" data-lightbox="image-set" data-title="KINGSONG 14M Black">
+				    			<img src="img/14m/black/gallery10.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/black/gallery11.jpg" data-lightbox="image-set" data-title="KINGSONG 14M Black">
+				    			<img src="img/14m/black/gallery11.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/14m/black/gallery12.jpg" data-lightbox="image-set" data-title="KINGSONG 14M Black">
+				    			<img src="img/14m/black/gallery12.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/16s/gallery17.jpg" data-lightbox="image-set" data-title="KINGSONG 16S Matte Black">
+				    			<img src="img/16s/gallery17.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/16s/gallery18.jpg" data-lightbox="image-set" data-title="KINGSONG 16S Matte Black">
+				    			<img src="img/16s/gallery18.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/16s/gallery19.jpg" data-lightbox="image-set" data-title="KINGSONG 16S Matte Black">
+				    			<img src="img/16s/gallery19.jpg" alt="">
+				    		</a>
+				    	</div>
+				    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+				    		<a href="img/16s/gallery20.jpg" data-lightbox="image-set" data-title="KINGSONG 16S Matte Black">
+				    			<img src="img/16s/gallery20.jpg" alt="">
+				    		</a>
+				    	</div>
+				    </div>
+        	</div>
         </section>
 
         <section id="in-the-news">
@@ -390,6 +425,7 @@
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
                         <p class="mt-4">
                             <a href="https://twitter.com/unibalancers" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
+                            <a href="https://www.youtube.com/channel/UCMsY3D4kQxW1fXZ2sfCay2A" target="_blank"><em class="ion-social-youtube text-youtube-alt icon-sm mr-3"></em></a>
                             <a href="https://www.facebook.com/unibalancers/" target="_blank"><em class="ion-social-facebook text-facebook-alt icon-sm mr-3"></em></a>
                             <a href="https://www.instagram.com/_unibalance_/" target="_blank"><em class="ion-social-instagram text-instagram-alt icon-sm mr-3"></em></a>
                         </p>
@@ -407,23 +443,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+        <script src="js/lightbox.min.js"></script>
         <script src="js/scripts.js"></script>
-        <!-- StatCounter -->
-        <script type="text/javascript">
-        var sc_project=11580785;
-        var sc_invisible=1;
-        var sc_security="0b4eb399";
-        var scJsHost = (("https:" == document.location.protocol) ?
-        "https://secure." : "http://www.");
-        document.write("<sc"+"ript type='text/javascript' src='" +
-        scJsHost+
-        "statcounter.com/counter/counter.js'></"+"script>");
-        </script>
-        <noscript><div class="statcounter"><a title="Web Analytics"
-        href="http://statcounter.com/" target="_blank"><img
-        class="statcounter"
-        src="//c.statcounter.com/11580785/0/0b4eb399/1/" alt="Web
-        Analytics"></a></div></noscript>
-        <!-- StatCounter -->
     </body>
 </html>
