@@ -467,7 +467,11 @@ Pricing tables & lists
 }
 
 #gallery {
-    background-color: #fff;
+    background-color: #fafafa;
+}
+
+#gallery .lead {
+    margin: 5px 0 40px 0;
 }
 
 #gallery img {
@@ -490,8 +494,6 @@ Pricing tables & lists
 #gallery .col-xs-12 {
     margin: 5px 0;
 }
-
-
 
 /*Custom Media Queries*/
 
