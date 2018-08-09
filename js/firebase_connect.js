@@ -1,10 +1,10 @@
 var config = {
-  apiKey: "AIzaSyDUXlNmmL9u6y3SDC3tWh7kOCZfLVEqgoQ",
-  authDomain: "unibalance-india.firebaseapp.com",
-  databaseURL: "https://unibalance-india.firebaseio.com",
-  projectId: "unibalance-india",
-  storageBucket: "",
-  messagingSenderId: "593280371889"
+  apiKey: "AIzaSyD5tFXcEXVgXPU5XT0Bqq3rip3kNfory74",
+  authDomain: "unibalance-india-enquiries.firebaseapp.com",
+  databaseURL: "https://unibalance-india-enquiries.firebaseio.com",
+  projectId: "unibalance-india-enquiries",
+  storageBucket: "unibalance-india-enquiries.appspot.com",
+  messagingSenderId: "666626166571"
 };
 
 firebase.initializeApp(config);
@@ -31,5 +31,10 @@ $(".enquiry-form form").submit(function(event) {
 		$("#submit-btn").css("background-color", "#f31500");
 		$("#submit-btn").html('Submit');
 		$(".enquiry-form form")[0].reset();
+	},function(error) {
+  	        $("#submit-btn").html('Try Again');
+		setTimeout(function() {
+			$("#submit-btn").html('Submit');
+		},2000);
 	});
 });
