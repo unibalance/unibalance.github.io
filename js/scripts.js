@@ -110,5 +110,5 @@ $(function () {
     $(".navbar-toggler").on("click", function() {
         $(".navbar").toggleClass("change-background");
     });
-
+    
 });

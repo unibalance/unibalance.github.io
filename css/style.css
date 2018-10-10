@@ -495,6 +495,121 @@ Pricing tables & lists
     margin: 5px 0;
 }
 
+#faq {
+    background-color: #fff;
+}
+
+#faq h5 {
+    margin: 10px 20px 0 0;
+}
+
+#faq p {
+    margin-top: 5px;
+}
+
+#faq ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+  }
+  #faq ul li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-bottom: 1px solid #dce7eb;
+  }
+  #faq ul li:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+  #faq ul li:nth-of-type(2) {
+    animation-delay: 0.75s;
+  }
+  #faq ul li:nth-of-type(3) {
+    animation-delay: 1s;
+  }
+  #faq ul li:last-of-type {
+    padding-bottom: 0;
+  }
+  #faq ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+  }
+  #faq ul li i:before, #faq ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: #f31500;
+    width: 3px;
+    height: 9px;
+  }
+  #faq ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  #faq ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  #faq ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+  }
+  #faq ul li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  #faq ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  #faq ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+
+#faq p, #faq ul li i:before, ul li i:after {
+    transition: all 0.25s ease-in-out;
+}
+
+#faq ul li {
+    animation: flipdown 0.5s ease both;
+}
+  
+  @keyframes flipdown {
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+    5% {
+      opacity: 1;
+    }
+    80% {
+      transform: rotateX(8deg);
+    }
+    83% {
+      transform: rotateX(6deg);
+    }
+    92% {
+      transform: rotateX(-3deg);
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
+  }
+  
+
+.mb-0 a {
+    font-weight: 500;
+}
+
 /*Custom Media Queries*/
 
 @media (min-width: 480px) {
