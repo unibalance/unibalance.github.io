@@ -1,0 +1,13 @@
+{"rules": {".read": false, ".write": false, "messages": {"$id": {
+  ".write": "!data.exists() && newData.exists()",
+  ".validate": "newData.hasChildren(['name', 'email', 'consent', 'createdAt', 'source'])",
+  "name": {".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 100"},
+  "email": {".validate": "newData.isString() && newData.val().length > 3 && newData.val().length <= 254 && newData.val().matches(/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/)"},
+  "subject": {".validate": "newData.isString() && newData.val().length <= 30"},
+  "city": {".validate": "newData.isString() && newData.val().length <= 100"},
+  "message": {".validate": "newData.isString() && newData.val().length <= 2000"},
+  "consent": {".validate": "newData.val() === true"},
+  "createdAt": {".validate": "newData.isNumber() && newData.val() === now"},
+  "source": {".validate": "newData.val() === 'unibalance-interest-v2'"},
+  "$other": {".validate": false}
+}}}}

@@ -1,1 +1,10 @@
+node_modules
+.codex-spreadsheet-work/
+outputs/
+*-export.json
+*.xlsx
+*.csv
+*.inspect.ndjson
+build_interest_export.mjs
 .DS_Store
+_site/
