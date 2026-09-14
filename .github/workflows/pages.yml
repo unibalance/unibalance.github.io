@@ -22,7 +22,7 @@ jobs:
       - name: Package public files only
         run: |
           mkdir -p _site/css _site/js
-          cp index.html CNAME _site/
+          cp index.html CNAME favicon.svg _site/
           cp css/redesign.css _site/css/
           cp js/experience.js js/firebase_connect.js _site/js/
           cp -R img _site/img
